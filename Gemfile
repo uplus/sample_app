@@ -29,6 +29,7 @@ group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'pry-rails'
   gem 'pry-doc'
+  gem 'pry-coolline'
   gem 'pry-stack_explorer'
   gem 'web-console'
   gem 'listen', '~> 3.0.8'

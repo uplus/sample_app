@@ -69,6 +69,8 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    coolline (0.5.0)
+      unicode_utils (~> 1.4)
     debug_inspector (0.0.3)
     erubis (2.7.0)
     excon (0.57.0)
@@ -263,6 +265,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-coolline (0.2.5)
+      coolline (~> 0.5)
     pry-doc (0.10.0)
       pry (~> 0.9)
       yard (~> 0.9)
@@ -344,6 +348,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.0.0)
       execjs (>= 0.3.0, < 3)
+    unicode_utils (1.4.0)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -375,6 +380,7 @@ DEPENDENCIES
   listen (~> 3.0.8)
   mini_magick (= 4.5.1)
   minitest-reporters (= 1.1.9)
+  pry-coolline
   pry-doc
   pry-rails
   pry-stack_explorer
