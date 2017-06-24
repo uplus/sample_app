@@ -13,7 +13,8 @@ class SessionsController < ApplicationController
     end
   end
 
-  def destory
-    @current_user = nil
+  def destroy
+    log_out
+    redirect_to root_url
   end
 end
