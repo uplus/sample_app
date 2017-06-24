@@ -5,13 +5,15 @@ class SessionsController < ApplicationController
   def create
     user = User.find_by(email: params[:session][:email].downcase)
     if user&.authenticate(params[:session][:password])
-      # Logged in
+      log_in(user)
+      redirect_to user
     else
-      flash.now[:danger] = 'Invalid email/password combination' # 本当は正しくない
+      flash.now[:danger] = 'Invalid email/password combination'
       render 'new'
     end
   end
 
   def destory
+    @current_user = nil
   end
 end
