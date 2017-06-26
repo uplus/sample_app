@@ -26,7 +26,6 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
                                        email: 'jontom@example.com',
                                        password:              'password',
                                        password_confirmation: 'password'} }
-
     end
 
     follow_redirect!
